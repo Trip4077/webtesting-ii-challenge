@@ -4,14 +4,15 @@ const Display = props => {
     return(
         <div>
             <h2>Display</h2>
+
+            <h4>Balls:</h4>
             <div>
-                <h4>Balls:</h4>
-                <p>{props.balls}</p>
+                <p data-testid='balls'>{props.balls}</p>
             </div>
 
+            <h4>Strikes:</h4>
             <div>
-                <h4>Strikes:</h4>
-                <p>{props.strikes}</p>
+                <p data-testid='strikes'>{props.strikes}</p>
             </div>
         </div>
     );

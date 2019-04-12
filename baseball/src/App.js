@@ -7,14 +7,14 @@ import './App.css';
 
 class App extends Component {
   state = {
-    balls: 0,
-    strikes: 0
+    strikes: 0,
+    balls: 0
   }
 
   render() {
     return (
       <div className="App">
-        <Display balls={this.state.balls}/>
+        <Display />
         <Dashboard />
       </div>
     );
