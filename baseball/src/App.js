@@ -14,8 +14,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Display />
-        <Dashboard />
+        <Dashboard { ...this.state }/>
       </div>
     );
   }

@@ -38,5 +38,5 @@ describe('Display Component', () => {
         const strikes = getByTestId('strikes').textContent;
 
         expect(strikes).toEqual('0');
-    })
+    });
 });
