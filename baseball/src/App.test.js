@@ -26,3 +26,4 @@ it('should render a component with a "Dashboard" header', () => {
 
   expect(header).toBeInTheDocument();
 });
+
