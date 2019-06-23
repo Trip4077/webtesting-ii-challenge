@@ -4,12 +4,18 @@ import Dashboard from './Dashboard/Dashboard';
 
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <Dashboard />
-    </div>
-  );
-}
+class App extends React.Component {
+  state = {
+    strikes: 0,
+    balls: 0
+  }
 
+  render() {
+    return (
+      <div className="App">
+        <Dashboard { ...this.state }/>
+      </div>
+    );
+  }
+}
 export default App;

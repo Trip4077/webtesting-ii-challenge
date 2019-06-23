@@ -22,7 +22,7 @@ it('renders without crashing', () => {
 it('should render a component with a "Dashboard" header', () => {
   const { getByText } = render(<App />);
 
-  getByText(/Dashboard/i);
+  const header = getByText(/Dashboard/i);
 
   expect(header).toBeInTheDocument();
 });
